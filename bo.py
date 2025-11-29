@@ -54,8 +54,12 @@ async def countdown_noel(update, context):
     h = diff.seconds // 3600
     m = (diff.seconds % 3600) // 60
 
-    msg = (
-        "🎄 Đếm ngược Noel 2025 nèee! 🎄\n\n"
-        f"{mood()}\n"
-        f"{name}, {pick(NOEL_FUNNY, name)}\n\n"
-        f"⏳ Còn: {days} ngày {h}
+   msg = (
+    "🎄 Đếm ngược Noel 2025 nèee! 🎄\n\n"
+    f"{mood()}\n"
+    f"{name}, {pick(NOEL_FUNNY, name)}\n\n"
+    f"⏳ Còn: {days} ngày {h} giờ {m} phút\n"
+    "📅 Noel vào ngày: 25/12/2025\n"
+    "✨ Chúc bạn mùa lễ tràn ngập niềm vui!"
+)
+
